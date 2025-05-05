@@ -1,0 +1,67 @@
+/* Define la paleta de colores*/
+:root {
+    --color-primary: #1c2b8f;
+    --color-secondary: #d5160a;
+    --color-secondary-dark: #b0100a;
+    --color-light: #f5f6fa;
+    --color-dark: #333;
+    --color-white: #ffffff;
+    --color-gray: #e0e0e0;
+}
+
+/* Usa una jerarquía de fuentes (Segoe UI como primera opción), elimina márgenes y padding que ya pueda tener
+pone el color negro usando la variable y un interlineado: 1.6 para mejor legibilidad*/
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+/**/
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Utilidades */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Transiciones */
+.transition {
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a.active {
+    background-color: var(--color-secondary);
+    color: white;
+    border-left: 4px solid var(--color-secondary-dark);
+}
+
+.sidebar-menu a.active i {
+    color: white;
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(213, 22, 10, 0.1);
+}
+
+.sidebar-menu a.active:hover {
+    background-color: var(--color-secondary-dark);
+}
+

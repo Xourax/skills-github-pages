@@ -1,0 +1,98 @@
+/*Usa un fle para centrar el contenido vertical y horizontalmente, color gris y su padding*/
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+/*Contenido de tamaño adaptable pero como maximo 400px, efecto de sombra flotante, bordes redondeados
+y Box-sizing: border-box para que el padding no afecte el ancho total*/
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/*Centra el logo y el texto y un margen para una separacion*/
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Pone una altura fija y un margensito*/
+.login-logo {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Su color mas su tamaño de fuente y margen en 0 para evitar espacios no deseados*/
+.login-box h1 {
+    font-size: 1.5rem;
+    color: #1c2b8f;
+    margin: 0;
+}
+
+/* Posición relativa para posicionar el icono absolutamente, margen inferior para separación entre campos*/
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Posicionamiento absoluto centrado verticalmente, color gris para los iconos y 15px desde la izquierda*/
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+/* Pone un padding izquierdo amplio (40px) para los iconos, un borde sutil gris transición suave con hover/focus
+Box-sizing: border-box para manejo correcto de dimensiones*/
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Cambia el borde a azul al enfocar ademas sombra azul muy tenue como highlight
+Elimina el outline nativo del navegador*/
+.input-group input:focus {
+    border-color: #1c2b8f;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(28, 43, 143, 0.1);
+}
+
+/* Pone un color rojo como acento principal, flexbox para centrar icono y texto, un espacio de 10px entre icono y texto (gap)
+tambien pone transición suave para efectos hover y un cursor pointer para indicar que es clickeable*/
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d5160a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Pone el color rojo mas fuertecito y hace un efecto de levitacion*/
+.login-btn:hover {
+    background-color: #b0100a;
+    transform: translateY(-2px);
+}

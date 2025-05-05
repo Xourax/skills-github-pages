@@ -1,0 +1,116 @@
+/* Estilos específicos para la página de detalle del trabajador */
+.detalle-trabajador-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.detalle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.detalle-header h2 {
+    margin: 0;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.detalle-badges .badge {
+    font-weight: 500;
+    padding: 6px 12px;
+    margin-left: 8px;
+}
+
+.detalle-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.detalle-seccion {
+    margin-bottom: 30px;
+}
+
+.detalle-seccion h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.detalle-seccion h3 i {
+    margin-right: 10px;
+    color: var(--color-secondary);
+}
+
+.detalle-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.detalle-item strong {
+    width: 180px;
+    color: #555;
+    font-weight: 500;
+}
+
+.detalle-item .valor {
+    flex: 1;
+}
+
+.detalle-item .valor.text-muted {
+    color: #999 !important;
+}
+
+.detalle-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estado del trabajador */
+.estado-activo {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.estado-inactivo {
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detalle-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detalle-badges {
+        margin-top: 15px;
+    }
+    
+    .detalle-item {
+        flex-direction: column;
+    }
+    
+    .detalle-item strong {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+

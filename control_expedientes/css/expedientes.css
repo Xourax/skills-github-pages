@@ -1,0 +1,156 @@
+/* Estructura principal */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Tarjetas de expedientes */
+.expedientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.expediente-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.expediente-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.expediente-content {
+    padding: 20px;
+}
+
+.expediente-content h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.genero {
+    margin: 0 0 15px 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.expediente-details {
+    margin-top: 15px;
+}
+
+.expediente-details p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.expediente-details strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.expediente-footer {
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
+.btn-ver {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px;
+    background: #1c2b8f;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-ver:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+/* Estados */
+.loading-state, .error-state, .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+}
+
+.loading-state {
+    color: #1c2b8f;
+}
+
+.error-state {
+    color: #dc3545;
+}
+
+.no-results {
+    color: #6c757d;
+}
+
+.btn-retry {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #d5160a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-retry:hover {
+    background: #b71c1c;
+}
+
+/* Barra de búsqueda */
+.search-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #1c2b8f;
+    box-shadow: 0 0 0 3px rgba(28, 43, 143, 0.1);
+}
+
+
+
+
+
+
+
+
+

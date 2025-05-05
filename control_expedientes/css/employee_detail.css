@@ -1,0 +1,171 @@
+/* Estilos específicos para la vista de detalle del trabajador */
+.employee-detail-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.employee-header {
+    background: var(--color-primary);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.employee-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.employee-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.employee-avatar .fa-user {
+    font-size: 3rem;
+    color: #666;
+}
+
+.employee-info {
+    flex: 1;
+}
+
+.employee-name {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.employee-position {
+    margin: 5px 0 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.employee-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 5px;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-section h3 i {
+    font-size: 1.2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-value {
+    word-break: break-word;
+}
+
+.employee-footer {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.Masculino {
+    background-color: #d4e6ff;
+    color: #0052cc;
+}
+
+.Femenino {
+    background-color: #ffd4f0;
+    color: #cc0066;
+}
+
+.Otro {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.status-badge.activo {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-badge.inactivo {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Document actions */
+.document-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .employee-body {
+        grid-template-columns: 1fr;
+    }
+    
+    .employee-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-grid {
+        grid-template-columns: 100px 1fr;
+    }
+    
+    .document-actions {
+        flex-direction: column;
+    }
+}
